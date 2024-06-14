@@ -15,11 +15,12 @@ function App() {
 
   return (
     <Router>
+
       <div className={`transition-all duration-700 ease-in-out w-full h-screen ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
         <div className={`w-full top-0 px-10 py-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
           <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </div>
-
+        <Design isDarkMode={isDarkMode} />
         <div className="flex flex-row px-10">
           <div className={`w-1/4 p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
             <Sidebar isDarkMode={isDarkMode} />
@@ -35,7 +36,7 @@ function App() {
         </div>
       </div>
       <div>
-        <Design isDarkMode={isDarkMode} />
+
       </div>
 
     </Router>

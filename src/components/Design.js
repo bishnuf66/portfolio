@@ -15,7 +15,7 @@ const Design = ({ isDarkMode }) => {
   }, []);
 
   return (
-    <div className="w-full h-screen">
+    <div >
       <Particles
         id="tsparticles"
         init={particlesInit}
