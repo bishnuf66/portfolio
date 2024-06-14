@@ -23,13 +23,13 @@ const Contact = ({ isDarkMode }) => {
             <div className="mb-4">
                 <h2 className="text-lg font-semibold mb-2">Follow Me</h2>
                 <div className="flex space-x-4">
-                    <a href="https://github.com/bishnuf66" target="_blank" rel="noopener noreferrer" className={`text-blue-500 hover:text-blue-600 ${isDarkMode ? 'text-white' : 'text-black'}`}>
+                    <a href="https://github.com/bishnuf66" target="_blank" rel="noopener noreferrer" className={`text-blue-500 hover:text-blue-600 `}>
                         Github
                     </a>
-                    <a href="https://www.facebook.com/bishnu.bk.315" target="_blank" rel="noopener noreferrer" className={`text-blue-500 hover:text-blue-600 ${isDarkMode ? 'text-white' : 'text-black'}`}>
+                    <a href="https://www.facebook.com/bishnu.bk.315" target="_blank" rel="noopener noreferrer" className={`text-blue-500 hover:text-blue-600 `}>
                         Facebook
                     </a>
-                    <a href="https://www.linkedin.com/in/bishnu-bk-820b09243/" target="_blank" rel="noopener noreferrer" className={`text-blue-500 hover:text-blue-600 ${isDarkMode ? 'text-white' : 'text-black'}`}>
+                    <a href="https://www.linkedin.com/in/bishnu-bk-820b09243/" target="_blank" rel="noopener noreferrer" className={`text-blue-500 hover:text-blue-600 `}>
                         LinkedIn
                     </a>
                     {/* Add more social links as needed */}
