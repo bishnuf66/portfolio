@@ -1,22 +1,40 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Home = ({ isDarkMode }) => {
     return (
         <div className={`p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
-            <h1 className="text-2xl font-bold mb-4">Welcome to My Portfolio!</h1>
-            <p>
-                Hello and welcome! I'm Bishnu, a passionate Fullstack Web Developer with a knack for creating robust, scalable web applications. Here, you'll find a showcase of my journey, projects I've built, and technologies I'm proficient in.
+            <h1 className="text-2xl font-bold mb-4">
+                <Typewriter
+                    words={['Welcome to My Portfolio!']}
+                    loop={1}
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                />
+            </h1>
+
+            <p className='mb-4'>"Hello and welcome! I'm Bishnu, a passionate Fullstack Web Developer with a knack for creating robust, scalable web applications. Here, you'll find a showcase of my journey, projects I've built, and technologies I'm proficient in."
             </p>
-            <h2 className="text-2xl font-bold mb-4">What You'll Discover:</h2>
-            <p>
-                Professional Projects: Explore a collection of projects I've crafted from ideation to deployment, leveraging technologies such as React, Node.js, and MongoDB.
-            </p>
-            <p>
-                Skills & Expertise: Dive into my proficiency in frontend development (HTML/CSS, JavaScript, React), backend development (Node.js, Express), database management (SQL, NoSQL), and more.
-            </p>
-            <p>
-                Passion for Problem-Solving: I thrive on solving complex problems and delivering intuitive solutions that enhance user experiences and drive business growth.
-            </p>
+            <h2 className="text-2xl font-bold mb-4">
+                <Typewriter
+                    words={["What You'll Discover:"]}
+                    loop={1}
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                />
+            </h2>
+
+            <p clasName="mb-1">Professional Projects: Explore a collection of projects I've crafted from ideation to deployment, leveraging technologies such as React, Node.js, and MongoDB.</p>
+
+            <p clasName="mb-1"> Skills & Expertise: Dive into my proficiency in frontend development (HTML/CSS, JavaScript, React), backend development (Node.js, Express), database management (SQL, NoSQL), and more.</p>
+
+            <p clasNaame="mb-1"> Passion for Problem-Solving: I thrive on solving complex problems and delivering intuitive solutions that enhance user experiences and drive business growth.</p>
         </div>
     );
 };

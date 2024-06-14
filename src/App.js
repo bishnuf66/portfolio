@@ -8,14 +8,14 @@ import Design from "./components/Design";
 import Header from "./components/Header";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
 
   return (
     <Router>
-      <div className={`w-full h-screen ${isDarkMode ? 'bg-black-gradient' : 'bg-white-gradient'}`}>
+      <div className={`transition-all duration-700 ease-in-out w-full h-screen ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
         <div className={`w-full top-0 px-10 py-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
           <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </div>
@@ -34,9 +34,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen">
+      <div>
         <Design isDarkMode={isDarkMode} />
       </div>
+
     </Router>
   );
 }

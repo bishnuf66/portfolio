@@ -3,31 +3,27 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 const Design = ({ isDarkMode }) => {
-
-
   const particleColor = isDarkMode ? "#ffffff" : "#000000";
   const linksColor = isDarkMode ? "#ffffff" : "#000000";
+
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    console.log(container);
   }, []);
+
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-screen">
       <Particles
-        className="w-full h-screen"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           fullScreen: true,
           background: {
-            /*  color: {
-               value: "#0d47a1",
-             }, */
+            // Adjust background options if needed
           },
           fpsLimit: 60,
           interactivity: {
@@ -39,7 +35,6 @@ const Design = ({ isDarkMode }) => {
               onHover: {
                 enable: true,
                 mode: "repulse",
-
                 distance: 400,
               },
               resize: true,
@@ -103,12 +98,3 @@ const Design = ({ isDarkMode }) => {
 };
 
 export default Design;
-
-/* mode: "grab",
-  grab: {
-  distance: 300,
-    line_linked: {
-    opacity: 0.5,
-  },
-},
- */
