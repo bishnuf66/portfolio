@@ -1,10 +1,9 @@
-// src/components/Projects.js
 import React from 'react';
 
-const Projects = () => {
+const Projects = ({ isDarkMode }) => {
     return (
         <div>
-            <div className="p-4 text-white">
+            <div className={`p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
                 <h1 className="text-2xl font-bold mb-4">Professional Experience</h1>
                 <ul className="space-y-2">
                     <li>
@@ -19,7 +18,7 @@ const Projects = () => {
                     {/* Add more projects as needed */}
                 </ul>
             </div>
-            <div className="p-4 text-white">
+            <div className={`p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
                 <h1 className="text-2xl font-bold mb-4">Personal Endeavors</h1>
                 <ul className="space-y-2">
                     <li>
@@ -36,7 +35,6 @@ const Projects = () => {
             </div>
 
         </div>
-
     );
 };
 

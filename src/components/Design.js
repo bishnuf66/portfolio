@@ -2,7 +2,11 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const Design = () => {
+const Design = ({ isDarkMode }) => {
+
+
+  const particleColor = isDarkMode ? "#ffffff" : "#000000";
+  const linksColor = isDarkMode ? "#ffffff" : "#000000";
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -52,10 +56,10 @@ const Design = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: particleColor,
             },
             links: {
-              color: "#ffffff",
+              color: linksColor,
               distance: 120,
               enable: true,
               opacity: 0.6,

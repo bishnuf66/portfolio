@@ -1,10 +1,9 @@
-// src/components/Sidebar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ isDarkMode }) => {
     return (
-        <div className="w-1/4  text-white p-4" >
+        <div className={`w-1/4 p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
             <ul className="space-y-4">
                 <li>
                     <Link to="/" className="text-lg hover:underline">Home</Link>
