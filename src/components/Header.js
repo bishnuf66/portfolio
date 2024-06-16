@@ -2,13 +2,13 @@ import React from "react";
 
 const Header = ({ isDarkMode, toggleDarkMode }) => {
   return (
-    <div className="px-5 py-4 flex justify-between items-center">
+    <div className=" p-0 sm:px-5 sm:py-4 flex justify-between items-center ">
       <div className="flex flex-col">
         <h1 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>Bishnu Bk</h1>
         <h1 className={`text-sm font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>Full Stack Developer</h1>
       </div>
       <div className="flex items-center">
-        <label className="inline-flex items-center cursor-pointer">
+        <label className="inline-flex items-center cursor-pointer ">
           <input
             type="checkbox"
             className="hidden peer"
@@ -25,7 +25,7 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
             ></div>
           </div>
           <span
-            className={`ml-3 text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-900'
+            className={` ml-3 text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-900 '
               }`}
           >
             {isDarkMode ? "Dark Mode" : "Light Mode"}

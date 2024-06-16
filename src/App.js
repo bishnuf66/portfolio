@@ -16,20 +16,23 @@ function App() {
   return (
     <Router>
 
-      <div className={`transition-all duration-700 ease-in-out w-full h-screen ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
-        <div className={`w-full top-0 px-10 py-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
+      <div className={` container transition-all duration-700 ease-in-out w-full min-h-screen ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
+
+        <Design isDarkMode={isDarkMode} />
+
+
+        <div className={` w-full top-0 p-0  sm:px-10 sm:py-4 ${isDarkMode ? 'text-white' : 'text-black'} `}>
           <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </div>
-        <Design isDarkMode={isDarkMode} />
-        <div className="flex flex-row px-10">
-          <div className={`w-1/4 p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
+
+        <div className="flex flex-row px-0 py-2  sm:px-10">
+          <div className={`w-1/4 p-0 sm:py-4 sm:p-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>
             <Sidebar isDarkMode={isDarkMode} />
           </div>
           <div className="flex justify-center items-center p-4">
             <Routes>
               <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
               <Route path="/projects" element={<Projects isDarkMode={isDarkMode} />} />
-              {/* Pass isDarkMode prop to Contact component */}
               <Route path="/contact" element={<Contact isDarkMode={isDarkMode} />} />
             </Routes>
           </div>

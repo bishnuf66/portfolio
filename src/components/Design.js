@@ -15,7 +15,7 @@ const Design = ({ isDarkMode }) => {
   }, []);
 
   return (
-    <div >
+    <div>
       <Particles
         id="tsparticles"
         init={particlesInit}
