@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
 
-      <div className={` container transition-all duration-700 ease-in-out w-full min-h-screen ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
+      <div className={` container transition-all duration-700 ease-in-out w-full min-h-screen ${isDarkMode ? 'bg-black' : 'bg-gray-50'}`}>
 
         <Design isDarkMode={isDarkMode} />
 

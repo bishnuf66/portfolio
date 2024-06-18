@@ -19,11 +19,11 @@ const Projects = ({ isDarkMode }) => {
                 <ul className="space-y-2">
                     <li>
                         <a href="TBA" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Akaunt</a>
-                        <span className="ml-2 text-gray-500">- Financial management system</span>
+                        <span className="ml-2">- Inventory And Financial Management System</span>
                     </li>
                     <li>
                         <a href="TBA" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Smart Garbage</a>
-                        <span className="ml-2 text-gray-500">- IoT-based waste management solution</span>
+                        <span className="ml-2 ">- IoT-based waste management solution</span>
                     </li>
 
                     {/* Add more professional projects as needed */}
@@ -44,15 +44,15 @@ const Projects = ({ isDarkMode }) => {
                 <ul className="space-y-2">
                     <li>
                         <a href="https://github.com/bishnuf66/event-management-system" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Event Management System</a>
-                        <span className="ml-2 text-gray-500">- System for organizing events</span>
+                        <span className="ml-2 ">- System for organizing events</span>
                     </li>
                     <li>
                         <a href="https://github.com/bishnuf66/recipe-web-app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Recipe Web App</a>
-                        <span className="ml-2 text-gray-500">- Application for sharing and discovering recipes</span>
+                        <span className="ml-2 ">- Application for sharing and discovering recipes</span>
                     </li>
                     <li>
                         <a href="https://github.com/bishnuf66/meropasal3" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Mero Pasal</a>
-                        <span className="ml-2 text-gray-500">- E-commerce platform for local market</span>
+                        <span className="ml-2 ">- E-commerce platform for local market</span>
                     </li>
                     {/* Add more personal projects as needed */}
                 </ul>
