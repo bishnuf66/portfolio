@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import DownloadCVButton from './DownloadCVButton'; // Use the correct case
 
 const Contact = ({ isDarkMode }) => {
     return (
@@ -40,6 +41,9 @@ const Contact = ({ isDarkMode }) => {
             <div>
                 <h2 className="text-lg font-semibold mb-2">Contact Information</h2>
                 <p>Email: b0677908@gmail.com</p>
+            </div>
+            <div className='mt-2'>
+                <DownloadCVButton/>
             </div>
         </div>
     );

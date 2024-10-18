@@ -30,11 +30,11 @@ const Home = ({ isDarkMode }) => {
                 />
             </h2>
 
-            <p clasName="mb-1">Professional Projects: Explore a collection of projects I've crafted from ideation to deployment, leveraging technologies such as React, Node.js, and MongoDB.</p>
+            <p clasName="mb-2">Professional Projects: Explore a collection of projects I've crafted from ideation to deployment, leveraging technologies such as React, Nextjs, Node.js, etc.</p>
 
-            <p clasName="mb-1"> Skills & Expertise: Dive into my proficiency in frontend development (HTML/CSS, JavaScript, React), backend development (Node.js, Express), database management (SQL, NoSQL), and more.</p>
+            <p clasName="mb-2"> Skills & Expertise: Dive into my proficiency in frontend development (HTML/CSS, JavaScript, React, Nextjs), backend development (Node.js, Express), database management (SQL, NoSQL), and more.</p>
 
-            <p clasNaame="mb-1"> Passion for Problem-Solving: I thrive on solving complex problems and delivering intuitive solutions that enhance user experiences and drive business growth.</p>
+            <p clasNaame="mb-2"> Passion for Problem-Solving: I thrive on solving complex problems and delivering intuitive solutions that enhance user experiences and drive business growth.</p>
         </div>
     );
 };
