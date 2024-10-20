@@ -78,8 +78,12 @@ const Projects = ({ isDarkMode }) => {
                         <span className="ml-2 ">- Application for sharing and discovering recipes</span>
                     </li>
                     <li>
-                        <a href="https://github.com/bishnuf66/meropasal3" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Mero Pasal</a>
+                        <a href="https://github.com/bishnuf66/meropasal" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Mero Pasal</a>
                         <span className="ml-2 ">- E-commerce platform for local market</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bishnuf66/realtime-chat-app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Chat-App</a>
+                        <span className="ml-2 ">- A realtime chat Application</span>
                     </li>
                     {/* Add more personal projects as needed */}
                 </ul>
